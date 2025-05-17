@@ -43,7 +43,7 @@ async def read_users2():
     return ["Bean", "Elfo"]
 
 
-# test enum
+# test enum: Creates list of options to choose from
 @app.get("/models/{model_name}")
 async def get_model(model_name: ModelName):
     if model_name is ModelName.alexnet:
